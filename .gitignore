@@ -43,4 +43,4 @@ Temporary Items
 .apdisk
 
 # BAT files need to run java code
-.BAT
+*.BAT
