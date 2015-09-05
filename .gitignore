@@ -14,8 +14,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# BAT files need to run java code
+# Java files that I don't want to see
 *.BAT
+*.class
 
 # Windows shortcuts
 *.lnk
