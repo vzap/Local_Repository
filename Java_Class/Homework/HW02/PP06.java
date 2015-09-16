@@ -12,18 +12,17 @@ public class PP06{
 
 		Scanner consoleInput = new Scanner(System.in);
 		//declare variables
-		float miles;
-		float km;
+		float miles, km;
 
 		//constants
-		float divide = 0.62137f;
+		final float DIVIDE = 0.62137f;
 
 		//promt the user for the number of miles via the console
 		System.out.println("Type the number of miles: (must be a number)");
 		miles = consoleInput.nextFloat();
 
 		//covert miles to km
-		km = miles/divide;
+		km = miles/DIVIDE;
 
 		//display
 		System.out.println("You went " + km + " kilometers");

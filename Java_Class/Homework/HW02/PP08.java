@@ -14,13 +14,10 @@ public class PP08{
 		Scanner consoleInput = new Scanner(System.in);
 
 		//declare variables
-		int hours = 0;
-		int minutes = 0;
-		int seconds = 0;
-		int tSeconds = 0;
+		int hours, minutes, seconds, tSeconds;
 
 		//set constants
-		int multiple = 60;
+		final int MULTIPLE = 60;
 
 		//ask the user for suff and things
 		System.out.println("Enter the number of hours: (Must be a whole number)");
@@ -31,7 +28,7 @@ public class PP08{
 		seconds = Math.abs(consoleInput.nextInt());
 
 		//calculation
-		tSeconds = seconds +((minutes +hours * multiple) * multiple);
+		tSeconds = seconds +((minutes +hours * MULTIPLE) * MULTIPLE);
 
 		//display
 		System.out.println("This is the total number of seconds " + tSeconds);

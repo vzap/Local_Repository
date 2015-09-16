@@ -10,19 +10,20 @@ import java.util.*;
 public class PP04{
 	public static void main(String[] args){
 		Scanner consoleInput = new Scanner(System.in);
+
 		//declare variables
-		String name;
-		String college;
-		String pet;
-		//this should be an int due to age but since its just getting printed out I will make it a string
-		String age;
+		String name, college, pet;
+		int age;
 
 		//get user information
 		System.out.println("Type your name and press enter: ");
 		name = consoleInput.nextLine();
-		//would use input.nextInt but since its not important if they enter a number its fine.
 		System.out.println("Type your age and press enter: (must be a number)");
-		age = consoleInput.nextLine();
+		age = consoleInput.nextInt();
+
+		//clear Next line buffer
+		consoleInput.nextLine();
+
 		System.out.println("Type the name of the college you go to and press enter: ");
 		college = consoleInput.nextLine();
 		System.out.println("Type your dogs name and press enter: ");

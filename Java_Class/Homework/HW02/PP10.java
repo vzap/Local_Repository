@@ -14,19 +14,13 @@ public class PP10{
 		Scanner consoleInput = new Scanner(System.in);
 
 		//declare variables
-		int total = 0;
-		int dollars = 0;
-		int quarters = 0;
-		int dimes = 0;
-		int nickels = 0;
-		int pennies = 0;
-		int remainder = 0;
+		int total, dollars, quarters, dimes, nickels, pennies, remainder;
 
 		//constant
-		int fDollar = 100;
-		int fQuarter = 25;
-		int fDime = 10;
-		int fNickel = 5;
+		final int FDOLLAR = 100;
+		final int FQUARTER = 25;
+		final int FDIME = 10;
+		final int FNICKEL = 5;
 
 		//get input
 		System.out.println("Type how much money was in the jar: (must be a whole number)");
@@ -35,18 +29,18 @@ public class PP10{
 		//process and display
 		if( total == 0) System.out.println("There was no money in the jar!");
 		else {
-			dollars = total / fDollar;
-			remainder = total % fDollar;
+			dollars = total / FDOLLAR;
+			remainder = total % FDOLLAR;
 
-			quarters = remainder / fQuarter;
-			remainder = remainder % fQuarter;
+			quarters = remainder / FQUARTER;
+			remainder = remainder % FQUARTER;
 
-			dimes = remainder / fDime;
-			remainder = remainder % fDime;
+			dimes = remainder / FDIME;
+			remainder = remainder % FDIME;
 
-			nickels = remainder / fNickel;
+			nickels = remainder / FNICKEL;
 
-			pennies = remainder % fNickel;
+			pennies = remainder % FNICKEL;
 
 			System.out.println("The cash break down: \n" +
 							   "Dollars:	" + dollars + "\n" +

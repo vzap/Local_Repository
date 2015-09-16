@@ -14,13 +14,10 @@ public class PP09{
 		Scanner consoleInput = new Scanner(System.in);
 
 		//declare variables
-		int hours = 0;
-		int minutes = 0;
-		int seconds = 0;
-		int tHours = 0;
+		int hours, minutes, seconds, tHours;
 
 		//set constants
-		int denominator = 60;
+		final int DENOMINATOR = 60;
 
 		//ask the user for suff and things
 		System.out.println("Enter the number of hours: (Must be a whole number)");
@@ -31,7 +28,7 @@ public class PP09{
 		seconds = Math.abs(consoleInput.nextInt());
 
 		//calculation
-		tHours = hours +((minutes + seconds / denominator) / denominator);
+		tHours = hours +((minutes + seconds / DENOMINATOR) / DENOMINATOR);
 
 		//display
 		System.out.println("This is the total number of hours " + tHours);

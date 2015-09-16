@@ -13,8 +13,7 @@ public class PP07{
 		Scanner consoleInput = new Scanner(System.in);
 
 		//declare variables
-		int distance;
-		int speed;
+		int distance, speed;
 		float time;
 
 		//prompt user for inputs store inputs

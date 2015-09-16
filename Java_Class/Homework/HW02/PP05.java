@@ -12,21 +12,21 @@ public class PP05{
 	public static void main(String[] args){
 		Scanner consoleInput = new Scanner(System.in);
 		DecimalFormat twoDecimal = new DecimalFormat("#.00");
+
 		//declare var
-		double fTemp;
-		double cTemp;
+		double fTemp, cTemp;
 
 		//constants
-		int minusNumb = 32;
-		int multiplyByNumb = 5;
-		int divideByNumb = 9;
+		final int MINUSNUMB = 32;
+		final int MULTIPLYBYNUMB = 5;
+		final int DIVIDEBYNUMB = 9;
 
 		//get user enter temp
 		System.out.println("What is the Temperature in fahrenheit: (must be a number)");
 		fTemp = consoleInput.nextDouble();
 
 		//convert fahrenheit to celsius
-		cTemp = ((fTemp - minusNumb)* multiplyByNumb)/divideByNumb;
+		cTemp = ((fTemp - MINUSNUMB)* MULTIPLYBYNUMB)/DIVIDEBYNUMB;
 
 		//display the celsius temp
 		System.out.println("The temp is: " + twoDecimal.format(cTemp));
